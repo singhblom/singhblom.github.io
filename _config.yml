@@ -21,7 +21,7 @@ use_math: true
 google_analytics:
 
 # Everything below here can be ignored, unless you want to change the theme entirely
-remote_theme: nielsenramon/chalk
+remote_theme: alshedivat/al-folio
 plugins:
   - jekyll-feed
   - jekyll-gist
