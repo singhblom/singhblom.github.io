@@ -5,6 +5,26 @@
   {%- seo -%}
   <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <script src="three.r119.min.js"></script>
+  <script src="vanta.fog.min.js"></script>
+  <script>
+  VANTA.FOG({
+    el: "#header",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    highlightColor: 0x13a01b,
+    midtoneColor: 0x50702b,
+    lowlightColor: 0x3a7f0b,
+    baseColor: 0xf2503,
+    blurFactor: 0.53,
+    speed: 0.10,
+    zoom: 0.30
+  })
+  </script>
+
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
